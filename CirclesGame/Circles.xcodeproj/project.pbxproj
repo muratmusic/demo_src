@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38D3288515B68FAF0053E089 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38D3287A15B68FAF0053E089 /* Circle.cpp */; };
+		38D3288615B68FAF0053E089 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38D3287D15B68FAF0053E089 /* GameObject.cpp */; };
+		38D3288715B68FAF0053E089 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38D3287F15B68FAF0053E089 /* Model.cpp */; };
+		38D3288815B68FAF0053E089 /* MovingCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38D3288115B68FAF0053E089 /* MovingCircle.cpp */; };
+		38F2A01615B7E5EE001D801F /* TouchedGLKView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38F2A01515B7E5EE001D801F /* TouchedGLKView.mm */; };
+		38F2A01E15B7FB56001D801F /* TextBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38F2A01D15B7FB56001D801F /* TextBar.cpp */; };
+		3C69616C13FAC12600540465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69616B13FAC12600540465 /* UIKit.framework */; };
+		3C69616E13FAC12600540465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69616D13FAC12600540465 /* Foundation.framework */; };
+		3C69617413FAC12600540465 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C69617213FAC12600540465 /* InfoPlist.strings */; };
+		3C69617613FAC12600540465 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C69617513FAC12600540465 /* main.mm */; };
+		3C69617A13FAC12600540465 /* EEAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C69617913FAC12600540465 /* EEAppDelegate.mm */; };
+		3C69618213FAC73200540465 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69618013FAC73200540465 /* GLKit.framework */; };
+		3C69618313FAC73200540465 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69618113FAC73200540465 /* OpenGLES.framework */; };
+		3C69618513FAC73700540465 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69618413FAC73700540465 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38D3287A15B68FAF0053E089 /* Circle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Circle.cpp; sourceTree = "<group>"; };
+		38D3287B15B68FAF0053E089 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		38D3287C15B68FAF0053E089 /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
+		38D3287D15B68FAF0053E089 /* GameObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = GameObject.cpp; sourceTree = "<group>"; };
+		38D3287E15B68FAF0053E089 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		38D3287F15B68FAF0053E089 /* Model.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Model.cpp; sourceTree = "<group>"; };
+		38D3288015B68FAF0053E089 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		38D3288115B68FAF0053E089 /* MovingCircle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MovingCircle.cpp; sourceTree = "<group>"; };
+		38D3288215B68FAF0053E089 /* MovingCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingCircle.h; sourceTree = "<group>"; };
+		38F2A01415B7E5EE001D801F /* TouchedGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchedGLKView.h; sourceTree = "<group>"; };
+		38F2A01515B7E5EE001D801F /* TouchedGLKView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TouchedGLKView.mm; sourceTree = "<group>"; };
+		38F2A01D15B7FB56001D801F /* TextBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TextBar.cpp; sourceTree = "<group>"; };
+		38F2A01F15B7FB65001D801F /* TextBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBar.h; sourceTree = "<group>"; };
+		3C69616713FAC12600540465 /* Circles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C69616B13FAC12600540465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C69616D13FAC12600540465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C69617113FAC12600540465 /* Circles-Info.plist */ = {isa = PBXFileReference; path = "Circles-Info.plist"; sourceTree = "<group>"; };
+		3C69617313FAC12600540465 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C69617513FAC12600540465 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3C69617713FAC12600540465 /* Circles-Prefix.pch */ = {isa = PBXFileReference; path = "Circles-Prefix.pch"; sourceTree = "<group>"; };
+		3C69617813FAC12600540465 /* EEAppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = EEAppDelegate.h; sourceTree = "<group>"; };
+		3C69617913FAC12600540465 /* EEAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EEAppDelegate.mm; sourceTree = "<group>"; };
+		3C69618013FAC73200540465 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3C69618113FAC73200540465 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3C69618413FAC73700540465 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C69616413FAC12600540465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C69618513FAC73700540465 /* QuartzCore.framework in Frameworks */,
+				3C69618213FAC73200540465 /* GLKit.framework in Frameworks */,
+				3C69618313FAC73200540465 /* OpenGLES.framework in Frameworks */,
+				3C69616C13FAC12600540465 /* UIKit.framework in Frameworks */,
+				3C69616E13FAC12600540465 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38D3287915B68FAF0053E089 /* GameSrc */ = {
+			isa = PBXGroup;
+			children = (
+				38D3287C15B68FAF0053E089 /* DataTypes.h */,
+				38D3288015B68FAF0053E089 /* Model.h */,
+				38D3287F15B68FAF0053E089 /* Model.cpp */,
+				38D3287E15B68FAF0053E089 /* GameObject.h */,
+				38D3287D15B68FAF0053E089 /* GameObject.cpp */,
+				38D3287B15B68FAF0053E089 /* Circle.h */,
+				38D3287A15B68FAF0053E089 /* Circle.cpp */,
+				38D3288215B68FAF0053E089 /* MovingCircle.h */,
+				38D3288115B68FAF0053E089 /* MovingCircle.cpp */,
+				38F2A01F15B7FB65001D801F /* TextBar.h */,
+				38F2A01D15B7FB56001D801F /* TextBar.cpp */,
+			);
+			path = GameSrc;
+			sourceTree = "<group>";
+		};
+		3C69615C13FAC12600540465 = {
+			isa = PBXGroup;
+			children = (
+				3C69616F13FAC12600540465 /* ExampleEngine */,
+				3C69616A13FAC12600540465 /* Frameworks */,
+				3C69616813FAC12600540465 /* Products */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		3C69616813FAC12600540465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C69616713FAC12600540465 /* Circles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C69616A13FAC12600540465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C69618413FAC73700540465 /* QuartzCore.framework */,
+				3C69618013FAC73200540465 /* GLKit.framework */,
+				3C69618113FAC73200540465 /* OpenGLES.framework */,
+				3C69616B13FAC12600540465 /* UIKit.framework */,
+				3C69616D13FAC12600540465 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C69616F13FAC12600540465 /* ExampleEngine */ = {
+			isa = PBXGroup;
+			children = (
+				38D3287915B68FAF0053E089 /* GameSrc */,
+				3C69617813FAC12600540465 /* EEAppDelegate.h */,
+				3C69617913FAC12600540465 /* EEAppDelegate.mm */,
+				38F2A01415B7E5EE001D801F /* TouchedGLKView.h */,
+				38F2A01515B7E5EE001D801F /* TouchedGLKView.mm */,
+				3C69617013FAC12600540465 /* Supporting Files */,
+			);
+			path = ExampleEngine;
+			sourceTree = "<group>";
+		};
+		3C69617013FAC12600540465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C69617113FAC12600540465 /* Circles-Info.plist */,
+				3C69617213FAC12600540465 /* InfoPlist.strings */,
+				3C69617513FAC12600540465 /* main.mm */,
+				3C69617713FAC12600540465 /* Circles-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C69616613FAC12600540465 /* Circles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C69617D13FAC12600540465 /* Build configuration list for PBXNativeTarget "Circles" */;
+			buildPhases = (
+				3C69616313FAC12600540465 /* Sources */,
+				3C69616413FAC12600540465 /* Frameworks */,
+				3C69616513FAC12600540465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Circles;
+			productName = ExampleEngine;
+			productReference = 3C69616713FAC12600540465 /* Circles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C69615E13FAC12600540465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Murat Dzhusupov";
+			};
+			buildConfigurationList = 3C69616113FAC12600540465 /* Build configuration list for PBXProject "Circles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C69615C13FAC12600540465;
+			productRefGroup = 3C69616813FAC12600540465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C69616613FAC12600540465 /* Circles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C69616513FAC12600540465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C69617413FAC12600540465 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C69616313FAC12600540465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C69617613FAC12600540465 /* main.mm in Sources */,
+				3C69617A13FAC12600540465 /* EEAppDelegate.mm in Sources */,
+				38D3288515B68FAF0053E089 /* Circle.cpp in Sources */,
+				38D3288615B68FAF0053E089 /* GameObject.cpp in Sources */,
+				38D3288715B68FAF0053E089 /* Model.cpp in Sources */,
+				38D3288815B68FAF0053E089 /* MovingCircle.cpp in Sources */,
+				38F2A01615B7E5EE001D801F /* TouchedGLKView.mm in Sources */,
+				38F2A01E15B7FB56001D801F /* TextBar.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C69617213FAC12600540465 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C69617313FAC12600540465 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C69617B13FAC12600540465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C69617C13FAC12600540465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C69617E13FAC12600540465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExampleEngine/Circles-Prefix.pch";
+				INFOPLIST_FILE = "ExampleEngine/Circles-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Circles;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C69617F13FAC12600540465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExampleEngine/Circles-Prefix.pch";
+				INFOPLIST_FILE = "ExampleEngine/Circles-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Circles;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C69616113FAC12600540465 /* Build configuration list for PBXProject "Circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C69617B13FAC12600540465 /* Debug */,
+				3C69617C13FAC12600540465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C69617D13FAC12600540465 /* Build configuration list for PBXNativeTarget "Circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C69617E13FAC12600540465 /* Debug */,
+				3C69617F13FAC12600540465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C69615E13FAC12600540465 /* Project object */;
+}
