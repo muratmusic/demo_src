@@ -37,11 +37,12 @@ Model::~Model()
 void Model::AddRandCircle()
 {
 	timeSinceLastStart_ = 0.0;
-	// from 0.3 sec to 1.3 sec
+	// Период от этого добавляемого сейчас круга до круга, который будем добавлять
+  // в следующий раз (from 0.3 sec to 1.3 sec)
   periodBetweenStarts_ = (double)(rand() % 1000)/1000.0 + 0.3;
-  // from 10.f to 60.f
+  // Радиус этого круга (from 10.f to 60.f)
   GLfloat radius = (GLfloat)(rand() % 50) + 10.f;
-  // границы в зависимости от радиуса
+  // учитываем границы экрана в зависимости от радиуса
   GLfloat centerX = radius + rand()%(320 - (int)(2*radius));
   // скорость (поинтов в секунду) обратно радиусу
   GLfloat velY = 500.f - radius*5.f;
@@ -49,8 +50,9 @@ void Model::AddRandCircle()
   MovingCircle *circle = new MovingCircle(radius, centerX, 460.f + radius/2.f,
   	(ColorEnum)(rand()%COLORS_COUNT), velY);
   gameObjects_.push_back(circle);
+  
   maxPossibleTotalScore_ += circle->Score();
-  shouldUpdateTextBar_ = true;
+  shouldUpdateTextBar_ = true; // при изменениях maxPossibleTotalScore_ или totalScore_
 }
 //------------------------------------------------------------------------------
 void Model::Update(double timeSinceLastUpdate)
@@ -105,6 +107,9 @@ void Model::TouchesBegan(GLfloat x, GLfloat y)
   	// так как могут перекрывать более ранние 
   while (true)
   {
+  	// если попали по объекту, то завершим его существование
+    // (было бы хорошо выдавать звук лопающегося пузырька с различным
+    // отклонением по тону и громости в зависимости от размеров)
     if ((*iter)->IsPointInside(x, y))
     {
     	totalScore_ += (*iter)->Score();
@@ -118,13 +123,7 @@ void Model::TouchesBegan(GLfloat x, GLfloat y)
     --iter;
   }
   
-  NSLog(@"totalScore_ = %d", (int)totalScore_);
+  // NSLog(@"totalScore_ = %d", (int)totalScore_);
   shouldUpdateTextBar_ = true;
 }
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------

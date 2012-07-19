@@ -23,13 +23,11 @@ public:
 	Model();
   ~Model();
   
-  void TearDownGL();
-  
   // обновление перед каждым кадром:
   void Update(double timeSinceLastUpdate);
-  // вызываем Render() каждого объекта на экране:
+  // вызываем в каждом кадре:
   void Render();
-  
+	// вызываем при прикосновениях к экрану:
   void TouchesBegan(GLfloat x, GLfloat y);
   
 private:
@@ -37,13 +35,15 @@ private:
   TextBar *textBar_;
   bool shouldUpdateTextBar_;
   
-  // случайный период между стартами кругов (и их рождениями):
+  // случайный период между стартом запущенного круга
+  // и стартом следущего запускаемого круга:
   NSTimeInterval periodBetweenStarts_;  
-  // сколько времени прошло после старта последнего круга:
+  // сколько времени прошло после старта последнего запущенного круга:
   NSTimeInterval timeSinceLastStart_;
 
-	void AddRandCircle();
+	void AddRandCircle(); // запустить очередной круг
   
+  // заработанные и максимально возможные очки
   int totalScore_, maxPossibleTotalScore_;
 };
 //------------------------------------------------------------------------------

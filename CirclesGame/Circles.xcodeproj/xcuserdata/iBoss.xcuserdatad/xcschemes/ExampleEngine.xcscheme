@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3C69616613FAC12600540465"
-               BuildableName = "ExampleEngine.app"
+               BuildableName = "Circles.app"
                BlueprintName = "Circles"
                ReferencedContainer = "container:Circles.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C69616613FAC12600540465"
-            BuildableName = "ExampleEngine.app"
+            BuildableName = "Circles.app"
             BlueprintName = "Circles"
             ReferencedContainer = "container:Circles.xcodeproj">
          </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C69616613FAC12600540465"
-            BuildableName = "ExampleEngine.app"
+            BuildableName = "Circles.app"
             BlueprintName = "Circles"
             ReferencedContainer = "container:Circles.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C69616613FAC12600540465"
-            BuildableName = "ExampleEngine.app"
+            BuildableName = "Circles.app"
             BlueprintName = "Circles"
             ReferencedContainer = "container:Circles.xcodeproj">
          </BuildableReference>

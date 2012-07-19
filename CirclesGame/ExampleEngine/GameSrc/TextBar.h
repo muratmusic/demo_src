@@ -4,6 +4,9 @@
 //
 //  Created by Murat Dzhusupov on 19.07.12.
 //
+//  Прямоугольник, выводящий в OpenGL-окно текст в центр себя
+//  (в настоящий момент используется только для вывода
+//  заработанных и максимально возможных очков)
 //------------------------------------------------------------------------------
 #ifndef ExampleEngine_ResultsBar_h
 #define ExampleEngine_ResultsBar_h
@@ -15,7 +18,7 @@ class TextBar
 {
 public:
   TextBar();
-  ~TextBar() {}
+  ~TextBar();
   
   void SetText(const char *utf8Text);
   void Render();

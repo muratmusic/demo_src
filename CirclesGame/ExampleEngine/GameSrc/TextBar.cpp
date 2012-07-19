@@ -35,6 +35,15 @@ TextBar::TextBar()
   textureInfo_ = nil;
 }
 //------------------------------------------------------------------------------
+TextBar::~TextBar()
+{
+	if (textureInfo_ != nil)
+  {
+  	GLuint name = textureInfo_.name;
+    glDeleteTextures(1, &name);  	
+  }
+}
+//------------------------------------------------------------------------------
 void TextBar::SetText(const char *utf8Text)
 {
 	if (textureInfo_ != nil)
@@ -64,31 +73,15 @@ void TextBar::SetText(const char *utf8Text)
     return;
   }
   
-  NSLog(@"Texture loaded successfully: name = %d size = (%d x %d)",
-    textureInfo_.name, textureInfo_.width, textureInfo_.height);
+  //NSLog(@"Texture loaded successfully: name = %d size = (%d x %d)",
+  //  textureInfo_.name, textureInfo_.width, textureInfo_.height);
 }
 //------------------------------------------------------------------------------
 void TextBar::Render()
 {
-	/*UIImage *image = [UIImage imageNamed:@"testTexture.png"];
-    
-  NSError *error;
-  textureInfo_ = [GLKTextureLoader textureWithCGImage:image.CGImage
-  	options://nil
-    [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderOriginBottomLeft]    
-    error:&error];
-  if (error)
-  {
-    NSLog(@"Error loading texture from image: %@",error);
-    return;
-  }
-  
-  NSLog(@"Texture loaded successfully: name = %d size = (%d x %d)",
-    textureInfo_.name, textureInfo_.width, textureInfo_.height);*/
-
   GLKBaseEffect *effect = [[GLKBaseEffect alloc] init];
   //effect.useConstantColor = YES;
-  //effect.constantColor = GLKVector4Make(.67f, .67f, .67f, 1.f);  
+  //effect.constantColor = GLKVector4Make(.67f, .67f, .67f, 1.f); 
   if (textureInfo_ != nil) 
   {
     effect.texture2d0.enabled = GL_TRUE;
@@ -131,12 +124,4 @@ void TextBar::Render()
   // Cleanup: Done with the current blend function
   glDisable(GL_BLEND);
 }
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
