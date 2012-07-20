@@ -6,7 +6,7 @@
 //
 
 #import "TouchedGLKView.h"
-#include "Model.h"
+#include "GameSrc/Model.h"
 
 @implementation TouchedGLKView
 
@@ -37,6 +37,8 @@
 		tapCounts[finger] = [touch tapCount];
 		++finger; // после цикла finger = количеству пальцев, удерживаемых на экране
 	}
+  
+  //NSLog(@"finger = %d", finger);
 	
 	if (1 == finger)
 	{

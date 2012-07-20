@@ -99,7 +99,7 @@ void Model::Render()
 //------------------------------------------------------------------------------
 void Model::TouchesBegan(GLfloat x, GLfloat y)
 {
-	if (y > 430.f)
+	if (y > 430.f || gameObjects_.empty())
   	return;
  
   std::list<GameObject*>::iterator iter = gameObjects_.end();
