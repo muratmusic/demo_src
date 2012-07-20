@@ -22,7 +22,7 @@ class GameObject
 {
 public:
 	GameObject(ColorEnum color);
-  ~GameObject() {}  
+  virtual ~GameObject() {}  
   
   virtual void Update(double timeSinceLastUpdate) = 0;
   virtual void Render() = 0;
